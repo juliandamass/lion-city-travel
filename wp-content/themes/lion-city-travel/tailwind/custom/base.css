@@ -1,0 +1,33 @@
+/**
+ * Custom styles to immediately follow Tailwind’s `base` layer
+ *
+ * “Add things like base typography styles [or] opinionated global resets.”
+ *
+ * — from https://tailwindcss.com/docs/plugins#adding-base-styles
+ */
+
+/**
+ * This uses the background and foreground colors declared in the
+ * `theme.json` file and is applied both to the frontend and in the block
+ * editor.
+*/
+
+/* main */
+
+body {
+	@apply bg-neutral-50 text-zinc-800;
+}
+
+header .custom-logo {
+	@apply w-full max-w-[120px];
+}
+
+.menu-main-container .menu {
+	@apply flex items-center space-x-8;
+}
+
+.menu-main-container .menu .menu-item {
+	@apply hover:text-primary py-2 text-lg font-medium transition-all;
+}
+
+/* end main */
