@@ -10,7 +10,6 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur est voluptatibus fuga. Assumenda nisi harum adipisci explicabo iste quo, quaerat cupiditate, fugiat suscipit quae porro sint qui praesentium libero dicta.
 
 	<?php lion_city_travel_post_thumbnail(); ?>
 

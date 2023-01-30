@@ -30,4 +30,46 @@ header .custom-logo {
 	@apply hover:text-primary py-2 text-lg font-medium transition-all;
 }
 
+.page-content > *,
+.entry-content > * {
+	@apply !max-w-full;
+}
+
 /* end main */
+
+/* form */
+
+.wpcf7.js {
+	@apply !mt-0;
+}
+
+.form-enquiry label span {
+	@apply mb-2 block whitespace-nowrap text-neutral-500;
+}
+
+.form-enquiry input,
+.form-enquiry textarea {
+	@apply max-w-full resize-none rounded-lg border-2 border-neutral-200 px-4 py-2;
+}
+
+.form-enquiry textarea {
+	@apply h-32;
+}
+
+.form-enquiry input[type="submit"] {
+	@apply bg-primary border-primary w-full cursor-pointer rounded-lg border px-4 py-2 text-center text-lg font-medium text-white;
+}
+
+.wpcf7-response-output {
+	@apply !m-0 !mt-4;
+}
+
+.wpcf7-spinner {
+	@apply !hidden !mx-auto !mt-4;
+}
+
+form.submitting .wpcf7-spinner {
+	@apply !block;
+}
+
+/* end form */

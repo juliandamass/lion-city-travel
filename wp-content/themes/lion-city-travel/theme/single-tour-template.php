@@ -45,27 +45,16 @@ get_header();
           while ( have_posts() ) :
             the_post();
 
-            get_template_part( 'template-parts/content', get_post_type() );
+				    get_template_part( 'template-parts/content/content', 'single-tour' );
 
           endwhile;
           ?>
         </div>
 
         <div class="col-span-2 space-y-8">
-          <div class="w-full bg-neutral-50 p-8 border-2 border-t-0 rounded-b-lg border-neutral-200 space-y-6">
-            <div class="flex flex-col space-y-2">
-              <label for="name" class="text-neutral-500 whitespace-nowrap">Full Name</label>
-              <input type="text" id="name" class="px-4 py-2 border-2 rounded-lg border-neutral-200" placeholder="Full Name" />
-            </div>
-            <div class="flex flex-col space-y-2">
-              <label for="name" class="text-neutral-500 whitespace-nowrap">Full Name</label>
-              <input type="text" id="name" class="px-4 py-2 border-2 rounded-lg border-neutral-200" placeholder="Full Name" />
-            </div>
-            <div class="flex flex-col space-y-2">
-              <label for="name" class="text-neutral-500 whitespace-nowrap">Full Name</label>
-              <textarea type="text" id="name" class="px-4 py-2 border-2 rounded-lg border-neutral-200 resize-none h-32" placeholder="Full Name"></textarea>
-            </div>
-            <button type="button" class="w-full text-lg text-center px-4 py-2 bg-primary border border-primary text-white font-medium rounded-lg">Submit Enquiry</button>
+          <div class="form-enquiry w-full bg-neutral-50 p-8 border-2 border-t-0 rounded-b-lg border-neutral-200 space-y-6">
+            <div class="hidden"></div>
+            <?php echo do_shortcode('[contact-form-7 id="78" title="Enquiry"]'); ?>
           </div>
 
           <div class="w-full px-8 py-6 bg-neutral-800 text-white rounded-lg overflow-hidden">

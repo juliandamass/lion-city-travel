@@ -129,23 +129,30 @@ get_header();
       </div>
       <div class="grid grid-cols-4">
         <?php
-          for ($i=0; $i < 4; $i++) {
+          $categories = get_categories( array(
+            'parent'  => 8,
+            'orderby' => 'count',
+            'order'   => 'DESC',
+            'number'  => 4,
+          ) );
+
+          foreach ( $categories as $category ) {
             ?>
             <div class="w-full overflow-hidden group">
               <div class="relative">
-                <img src="https://singatour.com/wp-content/uploads/2023/01/Royal-Palace-Cruise-Halong.jpg" class="w-full h-[200px] object-cover group-hover:scale-110 transition-all" alt="Post Image">
+                <img src="<?php echo z_taxonomy_image_url($category->term_id); ?>" class="w-full h-[200px] object-cover group-hover:scale-110 transition-all" alt="Post Image">
                 <div class="absolute top-0 left-0 flex items-end w-full h-full bg-black/50 text-white p-6">
                   <div class="w-full">
                     <div class="flex items-center space-x-2">
                       <i class="uil uil-map-marker text-xl"></i>
-                      <p class="text-white text-xl font-medium">Indonesia</p>
+                      <p class="text-white text-xl font-medium"><?php echo $category->cat_name?></p>
                     </div>
                     <div class="flex items-center space-x-2">
                       <i class="uil uil-map text-xl"></i>
-                      <p class="text-white font-medium">20 tours</p>
+                      <p class="text-white font-medium"><?php echo $category->count ?> tours</p>
                     </div>
                     <div class="mt-2">
-                      <button type="button" class="px-3 py-0.5 bg-primary border border-primary text-white text-sm font-medium rounded-lg">View All Tours</button>
+                      <a href="<?php echo get_category_link($category->term_id) ?>" class="px-3 py-0.5 bg-primary border border-primary text-white text-sm font-medium rounded-lg">View All Tours</a>
                     </div>
                   </div>
                 </div>
