@@ -184,3 +184,49 @@ function cptui_add_post_types_to_archives( $query ) {
 	}
 }
 add_filter( 'pre_get_posts', 'cptui_add_post_types_to_archives' );
+
+/**
+ * Parses custom content in WordPress Popular Posts.
+ *
+ * @param  string  $html    The HTML markup from the plugin.
+ * @param  integer $post_id The post/page ID.
+ * @return string
+ */
+function wpp_category_name_in_popular_posts($html, $post_id) {
+    if ( false !== strpos($html, '{text_category}') ) {
+        $category = get_the_category($post_id);
+        $category_name = $category[0]->name;
+
+        if ( $category ) {
+            $html = str_replace('{text_category}', $category_name, $html);
+
+        }
+    }
+
+    return $html;
+
+}
+add_filter('wpp_parse_custom_content_tags', 'wpp_category_name_in_popular_posts', 10, 2);
+
+/**
+ * Parses custom content in WordPress Popular Posts.
+ *
+ * @param  string  $html    The HTML markup from the plugin.
+ * @param  integer $post_id The post/page ID.
+ * @return string
+ */
+function wpp_price_in_popular_posts($html, $post_id) {
+    if ( false !== strpos($html, '{price}') ) {
+        $price = get_field('price', $post_id);
+
+        if ( $price ) {
+            $html = str_replace('{price}', $price, $html);
+        } else {
+            $html = str_replace('{price}', '-', $html);
+        }
+    }
+
+    return $html;
+
+}
+add_filter('wpp_parse_custom_content_tags', 'wpp_price_in_popular_posts', 10, 2);

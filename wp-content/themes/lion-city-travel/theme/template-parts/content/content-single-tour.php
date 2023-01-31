@@ -11,8 +11,6 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php lion_city_travel_post_thumbnail(); ?>
-
 	<div class="entry-content prose">
 		<?php
 		the_content(
