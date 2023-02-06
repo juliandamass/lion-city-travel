@@ -22,7 +22,7 @@ get_header();
     <div class="relative">
       <img src="<?php echo get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : get_template_directory_uri() . '/images/placeholder.jpg'; ?>" class="w-full h-[520px] object-cover" alt="Image">
       <div class="absolute top-0 left-0 w-full h-full bg-black/40">
-        <div class="flex items-end container px-4 mx-auto w-full h-full">
+        <div class="flex items-end max-w-6xl px-4 mx-auto w-full h-full">
           <div class="grid grid-cols-6 gap-8">
             <div class="col-span-4 flex items-end pb-8">
               <p class="text-3xl text-white font-bold leading-snug">5D Hanoi with 1N Cruise in Halong Bay (Private Tour) TR-634 SIN-HDY 1325-1355 PHATTHALUNG- HATYAI >CENTARA</p>
@@ -38,7 +38,7 @@ get_header();
       </div>
     </div>
 
-		<div class="container px-4 mx-auto pb-16">
+		<div class="max-w-6xl px-4 mx-auto pb-16">
       <div class="grid grid-cols-6 gap-8">
         <div class="col-span-4 py-8">
           <?php

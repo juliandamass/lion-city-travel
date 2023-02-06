@@ -23,7 +23,7 @@ get_header();
       <?php echo do_shortcode('[metaslider id="16"]'); ?>
     </div>
 
-		<div class="container px-4 mx-auto">
+		<div class="max-w-6xl px-4 mx-auto">
       <div class="py-16 space-y-16">
         <div class="w-full">
           <div class="mb-10 text-center">
@@ -86,7 +86,7 @@ get_header();
                 ?>
                 <div class="w-full bg-white rounded-lg shadow-[0_1px_4px_1px_rgba(0,0,0,0.05)] hover:shadow-[0_1px_4px_1px_rgba(0,0,0,0.15)] transition-all overflow-hidden">
                   <a href="<?php echo get_post_permalink($tour->ID); ?>">
-                    <img src="<?php echo get_the_post_thumbnail_url($tour->ID) ? get_the_post_thumbnail_url($tour->ID) : get_template_directory_uri() . '/images/placeholder.jpg'; ?>" class="w-full h-80 object-cover" alt="Post Image">
+                    <img src="<?php echo get_the_post_thumbnail_url($tour->ID) ? get_the_post_thumbnail_url($tour->ID) : get_template_directory_uri() . '/images/placeholder.jpg'; ?>" class="w-full h-60 object-cover" alt="Post Image">
                     <div class="p-4 space-y-2">
                       <p class="font-bold text-lg leading-tight"><?php echo $tour->post_title ?></p>
                       <div>
@@ -101,7 +101,7 @@ get_header();
                           <p class="text-sm text-neutral-500 whitespace-nowrap">Start From</p>
                           <p class="text-2xl text-primary font-bold whitespace-nowrap">S$ <?php echo get_field('price', $tour->ID) ? get_field('price', $tour->ID) : '-'; ?></p>
                         </div>
-                        <button type="button" class="px-4 py-1 bg-primary border border-primary text-white font-medium rounded-lg">Book Now</button>
+                        <button type="button" class="px-4 py-1 bg-primary border border-primary text-white font-medium rounded-lg">See Details</button>
                       </div>
                     </div>
                   </a>
@@ -111,14 +111,14 @@ get_header();
             ?>
           </div>
           <div class="text-center mt-10">
-            <button type="button" class="px-6 py-2 bg-white hover:bg-primary border-2 border-primary text-primary hover:text-white text-xl font-medium rounded-lg transition-all">View All Tour Packages</button>
+            <a href="<?php echo get_site_url(); ?>/category/destination" class="px-6 py-2 bg-white hover:bg-primary border-2 border-primary text-primary hover:text-white text-xl font-medium rounded-lg transition-all">View All Tour Packages</a>
           </div>
         </div>
       </div>
     </div>
 
     <div class="w-full py-10 bg-gray-100">
-		  <div class="container px-4 mx-auto">
+		  <div class="max-w-6xl px-4 mx-auto">
         <div class="mb-10 text-center">
           <h2 class="text-4xl font-bold">Top Destinations</h2>
         </div>

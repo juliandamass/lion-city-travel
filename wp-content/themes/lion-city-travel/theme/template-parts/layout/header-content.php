@@ -12,7 +12,7 @@
 <header id="masthead">
 
   <div class="bg-primary">
-    <div class="container px-4 py-1 mx-auto flex items-center justify-between">
+    <div class="max-w-6xl px-4 py-1 mx-auto flex items-center justify-between">
       <div class="flex items-center space-x-4">
         <div class="flex items-center space-x-1">
           <i class="uil uil-phone text-white"></i>
@@ -37,7 +37,7 @@
     </div>
   </div>
 
-  <div class="container px-4 py-4 mx-auto flex items-center justify-between">
+  <div class="max-w-6xl px-4 py-4 mx-auto flex items-center justify-between">
     <div class="site-branding">
       <?php
         if (has_custom_logo()) :

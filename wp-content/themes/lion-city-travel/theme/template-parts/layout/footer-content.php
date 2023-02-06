@@ -11,7 +11,7 @@
 
 <footer id="colophon">
   <div class="bg-neutral-800 text-white">
-    <div class="container px-4 py-10 mx-auto">
+    <div class="max-w-6xl px-4 py-10 mx-auto">
       <div class="grid grid-cols-12 gap-6">
         <div class="col-span-2">
           <?php
@@ -76,7 +76,7 @@
     </div>
   </div>
   <div class="bg-primary py-4">
-    <div class="container px-4 mx-auto text-center">
+    <div class="max-w-6xl px-4 mx-auto text-center">
       <p class="text-white">Copyright ©2023 Lion City Travel Pte Ltd. All rights reserved.</p>
     </div>
   </div>

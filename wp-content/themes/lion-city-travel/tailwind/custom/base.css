@@ -19,7 +19,7 @@ body {
 }
 
 header .custom-logo {
-	@apply w-full max-w-[400px] h-full max-h-[80px];
+	@apply h-full max-h-[80px] w-full max-w-[400px];
 }
 
 .menu-main-container .menu {
@@ -31,7 +31,9 @@ header .custom-logo {
 }
 
 .page-content > *,
-.entry-content > * {
+.entry-content > *,
+.page-title,
+.entry-title {
 	@apply !max-w-full;
 }
 
@@ -55,20 +57,20 @@ header .custom-logo {
 	@apply !mt-0;
 }
 
-.form-enquiry label span {
+.wpcf7-form label span {
 	@apply mb-2 block whitespace-nowrap text-neutral-500;
 }
 
-.form-enquiry input,
-.form-enquiry textarea {
-	@apply max-w-full resize-none rounded-lg border-2 border-neutral-200 px-4 py-2;
+.wpcf7-form input,
+.wpcf7-form textarea {
+	@apply w-full max-w-full resize-none rounded-lg border-2 border-neutral-200 px-4 py-2;
 }
 
-.form-enquiry textarea {
+.wpcf7-form textarea {
 	@apply h-32;
 }
 
-.form-enquiry input[type="submit"] {
+.wpcf7-form input[type="submit"] {
 	@apply bg-primary border-primary w-full cursor-pointer rounded-lg border px-4 py-2 text-center text-lg font-medium text-white;
 }
 
@@ -85,3 +87,28 @@ form.submitting .wpcf7-spinner {
 }
 
 /* end form */
+
+/* pagination */
+
+.navigation.pagination {
+	@apply flex justify-center;
+}
+
+.navigation.pagination .nav-links {
+	@apply flex space-x-4;
+}
+
+.navigation.pagination .nav-links .page-numbers {
+	@apply inline-flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg border border-neutral-200 p-2;
+}
+
+.navigation.pagination .nav-links .page-numbers.current {
+	@apply bg-primary border-primary text-white;
+}
+
+.navigation.pagination .nav-links .page-numbers.prev,
+.navigation.pagination .nav-links .page-numbers.next {
+	@apply w-auto;
+}
+
+/* end pagination */
