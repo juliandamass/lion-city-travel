@@ -16,11 +16,11 @@
       <div class="flex items-center space-x-4">
         <div class="flex items-center space-x-1">
           <i class="uil uil-phone text-white"></i>
-          <p class="text-sm text-white">+65 1234 1234</p>
+          <p class="text-sm text-white">69570570</p>
         </div>
         <div class="flex items-center space-x-1">
           <i class="uil uil-envelope text-white"></i>
-          <p class="text-sm text-white">enquiry@domain.com</p>
+          <p class="text-sm text-white">enquiry@lioncitytravel.com</p>
         </div>
       </div>
       <div class="flex items-center space-x-2">

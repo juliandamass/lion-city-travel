@@ -21,23 +21,22 @@
           ?>
         </div>
         <div class="col-span-5 space-y-4">
-          <h2 class="text-2xl font-bold">Lion City Travel</h2>
-          <p class="text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque molestiae, accusantium voluptas officiis suscipit commodi</p>
+          <h2 class="text-2xl font-bold">Lion City Travel Services Pte. Ltd.</h2>
           <div class="flex space-x-4">
             <i class="uil uil-home text-2xl -mt-1"></i>
-            <p class="text-lg">810 Geylang Rd, #02-03 City Plaza, Singapore 409286</p>
+            <p class="text-lg">52 Telok Blangah Road #02-10 Telok Blangah House Singapore 098829</p>
           </div>
           <div class="flex space-x-4">
             <i class="uil uil-phone text-2xl -mt-1"></i>
-            <p class="text-lg">+65 6746 9696 / Whatsapp: +65 8181 1067</p>
+            <p class="text-lg">69570570 / Whatsapp: 87847500</p>
           </div>
           <div class="flex space-x-4">
             <i class="uil uil-envelope text-2xl -mt-1"></i>
-            <p class="text-lg">enquiry@96travel.com.sg</p>
+            <p class="text-lg">enquiry@lioncitytravel.com</p>
           </div>
           <div class="flex space-x-4">
             <i class="uil uil-clock text-2xl -mt-1"></i>
-            <p class="text-lg">Monday - Saturday: 12pm to 6pm</p>
+            <p class="text-lg">Monday - Saturday: 10am-6pm</p>
           </div>
         </div>
         <div class="col-span-1"></div>
