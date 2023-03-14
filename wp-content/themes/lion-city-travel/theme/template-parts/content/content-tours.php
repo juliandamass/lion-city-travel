@@ -8,7 +8,6 @@
  */
 
 ?>
-<!-- <?php var_dump(); ?> -->
 <div class="w-full bg-white rounded-lg shadow-[0_1px_4px_1px_rgba(0,0,0,0.05)] hover:shadow-[0_1px_4px_1px_rgba(0,0,0,0.15)] transition-all overflow-hidden">
   <a href="<?php echo get_post_permalink(); ?>">
     <img src="<?php echo get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : get_template_directory_uri() . '/images/placeholder.jpg'; ?>" class="w-full h-60 object-cover" alt="Post Image">
