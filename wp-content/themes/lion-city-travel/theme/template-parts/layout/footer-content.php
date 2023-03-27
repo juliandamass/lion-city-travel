@@ -34,12 +34,7 @@
             <i class="uil uil-envelope text-2xl -mt-1"></i>
             <p class="text-lg">enquiry@lioncitytravel.com</p>
           </div>
-          <div class="flex space-x-4">
-            <i class="uil uil-clock text-2xl -mt-1"></i>
-            <p class="text-lg">Monday - Saturday: 10am-6pm</p>
-          </div>
         </div>
-        <div class="col-span-1"></div>
         <div class="col-span-2 space-y-4">
           <h2 class="text-2xl font-bold">Menu</h2>
           <div class="flex flex-col space-y-2">
@@ -48,7 +43,9 @@
             <a href="#" class="hover:text-primary transition-all">Contact</a>
           </div>
         </div>
-        <div class="col-span-2 space-y-4">
+        <div class="col-span-3 space-y-4">
+          <h2 class="text-2xl font-bold">License</h2>
+          <p class="text-xl font-bold">STB LICENSE TA03557</p>
           <h2 class="text-2xl font-bold">Follow us on</h2>
           <div class="flex flex-col space-y-2">
             <a href="#">
